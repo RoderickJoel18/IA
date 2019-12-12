@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form action="{{url_for('table')}}" method="POST">
+        <table border=1>
+            <thead>
+                <td>Marca</td>
+                <td>Modelo</td>
+                <td>Color</td>
+                <td>Año</td>
+                <td>Placa</td>
+                <td>Nombre</td>
+                <td>Apellido</td>
+            </thead>
+            {% for fila in filas %}
+            <tr>
+                <td>{{fila["marca"]}}</td>
+                <td>{{fila["modelo"]}}</td>
+                <td>{{fila["color"]}}</td>
+                <td>{{fila["año"]}}</td>
+                <td>{{fila["placa"]}}</td>
+                <td>{{fila["nombre"]}}</td>
+                <td>{{fila["apellido"]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <h2><a href="/">Volver a inicio</a></h2>
+    </form>
+</body>
+
+</html>

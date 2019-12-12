@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Iniciar Sesión</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form action="{{url_for('iniciar_sesion')}}" method="POST">
+        Usuario<br>
+        <input type="text" name="usuario"/></br>
+        Contraseña<br>
+        <input type="password" name="contraseña"/></br>
+        <input type="submit" value="Iniciar Sesión"><br>
+        
+        <h2>¿No tengo una cuenta?<a href="/register">Registrarse</a></h2>
+
+
+    </form>
+</body>
+
+</html>
